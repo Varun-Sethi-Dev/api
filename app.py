@@ -40,8 +40,8 @@ def trilaterate():
     estimated_distances = data.get('estimated_distances')
 
     # Check for required data
-    if not all([beacon_locations, estimated_distances]):
-        return jsonify({'error': 'Missing required data'}), 400
+    # if not all([beacon_locations, estimated_distances]):
+    #     return jsonify({'error': 'Missing required data'}), 400
 
     # Perform trilateration calculations (same as before)
     initial_guess = [5.0, 5.0, 5.0]  # Replace with a better guess if available
