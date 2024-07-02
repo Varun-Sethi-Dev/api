@@ -25,6 +25,10 @@ def trilateration_equations(coordinates, beacon_locs, distances):
 # Define the Flask app
 app = Flask(__name__)
 
+@app.route("/")
+def start():
+    return "Server is Running"
+
 
 # API endpoint for trilateration
 @app.route('/trilaterate', methods=['POST'])
