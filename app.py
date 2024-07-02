@@ -52,6 +52,3 @@ def trilaterate():
     return jsonify({'x': optimized_x, 'y': optimized_y, 'z': optimized_z})
 
 
-# Run the Flask app
-if __name__ == '__main__':
-    app.run(debug=True)
