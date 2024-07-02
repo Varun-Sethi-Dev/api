@@ -31,7 +31,7 @@ def start():
 
 
 # API endpoint for trilateration
-@app.route('/trilaterate', methods=['POST'])
+@app.route('/trilaterate/', methods=['POST'])
 def trilaterate():
     # Get request data (beacon locations and estimated distances)
 
